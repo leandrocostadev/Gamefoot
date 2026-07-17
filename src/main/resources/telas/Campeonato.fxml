@@ -2,7 +2,7 @@
 
 <?import javafx.scene.control.*?>
 
-<TableView fx:id="tabelaCampeonato" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<TableView fx:id="tabelaCampeonato" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CampeonatoController">
   <columns>
     <TableColumn fx:id="colunaPosicao" prefWidth="35.0" text="PS" />
     <TableColumn fx:id="colunaClube" prefWidth="254.0" text="CLUBE" />

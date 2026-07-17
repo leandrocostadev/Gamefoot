@@ -14,6 +14,7 @@ module com.example.ganefoot {
     requires java.desktop;
     requires java.sql;
 
+
     exports application;
     opens application to javafx.fxml, javafx.graphics;
 }

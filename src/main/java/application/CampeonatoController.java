@@ -14,31 +14,32 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableView;
 
 import javafx.scene.control.TableColumn;
+import modelo.Clube;
 import modelo.ParticipacaoCampeonato;
 
 public class CampeonatoController implements Initializable, OnChangeScreen {
 	@FXML
-	private TableView tabelaTimes;
+	private TableView<ParticipacaoCampeonato> tabelaCampeonato;
 	@FXML
-	private TableColumn coluna_id;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaPontos;
 	@FXML
-	private TableColumn coluna_pos;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaPosicao;
 	@FXML
-	private TableColumn coluna_time;
+	private TableColumn<ParticipacaoCampeonato, String> colunaClube;
 	@FXML
-	private TableColumn coluna_jogos;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaJogos;
 	@FXML
-	private TableColumn coluna_vitorias;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaVitorias;
 	@FXML
-	private TableColumn coluna_empates;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaEmpates;
 	@FXML
-	private TableColumn coluna_derrotas;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaDerrotas;
 	@FXML
-	private TableColumn coluna_gols;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaGolsPro;
 	@FXML
-	private TableColumn coluna_golsContra;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaGolsContra;
 	@FXML
-	private TableColumn coluna_golsSaldo;
+	private TableColumn<ParticipacaoCampeonato, Integer> colunaDiferenca;
 	@Override
 	public void onScreenChanged(String newScreen, Object userData) {
 		// TODO Auto-generated method stub
@@ -50,50 +51,50 @@ public class CampeonatoController implements Initializable, OnChangeScreen {
 		System.out.println("esta ativando initialize");
 		Main.addOnChangeScreenListener(this);
 
-/*
-		coluna_pos.setCellValueFactory(cellData ->
+
+		colunaPosicao.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(
-						tabelaTimes.getItems().indexOf(cellData.getValue()) + 1
+						tabelaCampeonato.getItems().indexOf(cellData.getValue()) + 1
 				)
 		);
 
-		coluna_time.setCellValueFactory(cellData ->
+		colunaClube.setCellValueFactory(cellData ->
 				new ReadOnlyStringWrapper(
 						cellData.getValue().getClube().getNome()
 				)
 		);
 
-		coluna_id.setCellValueFactory(cellData ->
+		colunaPontos.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getPontos())
 		);
 
-		coluna_jogos.setCellValueFactory(cellData ->
+		colunaJogos.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getJogos())
 		);
 
-		coluna_vitorias.setCellValueFactory(cellData ->
+		colunaVitorias.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getVitorias())
 		);
 
-		coluna_empates.setCellValueFactory(cellData ->
+		colunaEmpates.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getEmpates())
 		);
 
-		coluna_derrotas.setCellValueFactory(cellData ->
+		colunaDerrotas.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getDerrotas())
 		);
 
-		coluna_gols.setCellValueFactory(cellData ->
+		colunaGolsPro.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getGolsPro())
 		);
 
-		coluna_golsContra.setCellValueFactory(cellData ->
+		colunaGolsContra.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getGolsContra())
 		);
 
-		coluna_golsSaldo.setCellValueFactory(cellData ->
+		colunaDiferenca.setCellValueFactory(cellData ->
 				new ReadOnlyObjectWrapper<>(cellData.getValue().getGolsDiferenca())
-		);*/
+		);
 
 	}
 
@@ -107,8 +108,8 @@ public class CampeonatoController implements Initializable, OnChangeScreen {
 						dao.buscarPorCampeonato(idCampeonato)
 				);
 
-		tabelaTimes.setItems(dados);
-		System.out.println(tabelaTimes);
+		tabelaCampeonato.setItems(dados);
+		System.out.println(tabelaCampeonato);
 	}
 
 }
