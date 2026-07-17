@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="670.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <ListView fx:id="listaJogos" layoutX="14.0" layoutY="10.0" prefHeight="650.0" prefWidth="550.0" />
+      <Label fx:id="lbMandante" alignment="CENTER" layoutX="632.0" layoutY="211.0" prefHeight="22.0" prefWidth="111.0" text="Time A" />
+      <Label fx:id="lbVisitante" alignment="CENTER" layoutX="775.0" layoutY="211.0" prefHeight="22.0" prefWidth="111.0" text="Time B" />
+      <Label layoutX="752.0" layoutY="212.0" prefHeight="22.0" text="X" />
+      <ListView fx:id="listaDetalhesDoJogo" layoutX="631.0" layoutY="250.0" prefHeight="200.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>

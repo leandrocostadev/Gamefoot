@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuFixoController">
+   <children>
+      <Button fx:id="bVoltar" alignment="CENTER" mnemonicParsing="false" onAction="#telaAnterior" prefHeight="30.0" text="&lt;&lt;" />
+      <Button fx:id="bAvancar" alignment="CENTER" mnemonicParsing="false" onAction="#telaPosterior" prefHeight="30.0" text="&gt;&gt;" />
+      <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" text="Calendário" textAlignment="JUSTIFY">
+        <items>
+          <MenuItem fx:id="miJogosClube" mnemonicParsing="false" onAction="#jogosClube" text="Jogos do seu clube" />
+            <MenuItem fx:id="miJogosSelecao" mnemonicParsing="false" onAction="#jogosSelecao" text="Jogos da seleção" />
+        </items>
+      </MenuButton>
+      <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" text="Competições">
+         <items>
+            <Menu fx:id="menuCampeonatos" mnemonicParsing="false" text="Campeonatos Nacionais" />
+            <Menu fx:id="menuCopas" mnemonicParsing="false" text="Copas Nacionais" />
+            <Menu fx:id="menuInternacionais" mnemonicParsing="false" text="Competições Internacionais" />
+            <Menu fx:id="menuSelecoes" mnemonicParsing="false" text="Competições de Seleções" />
+         </items>
+      </MenuButton>
+      <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" text="Gerenciar Time">
+        <items>
+          <MenuItem fx:id="miClube" mnemonicParsing="false" onAction="#verClube" text="Meu Clube" />
+          <MenuItem fx:id="miJuniores" mnemonicParsing="false" onAction="#verJuniores" text="Juniores" />
+            <MenuItem fx:id="miSelecao" mnemonicParsing="false" onAction="#verAltualSelecao" text="Seleção Nacional" />
+        </items>
+      </MenuButton>
+      <Button fx:id="bProcurar" alignment="CENTER" mnemonicParsing="false" onAction="#procurarJogador" prefHeight="30.0" prefWidth="69.0" text="Procurar" />
+      <Button fx:id="bFinancas" alignment="CENTER" mnemonicParsing="false" onAction="#verFinancas" prefHeight="30.0" text="Finanças" />
+      <Button fx:id="bHistoria" alignment="CENTER" mnemonicParsing="false" onAction="#historiaDoClube" prefHeight="30.0" text="História do Clube" />
+      <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" text="Rakings">
+        <items>
+          <MenuItem fx:id="miRankJogadores" mnemonicParsing="false" onAction="#rakingJogadores" text="Jogadores" />
+          <MenuItem fx:id="miRankTecnicos" mnemonicParsing="false" onAction="#rakingTecnicos" text="Técnicos" />
+            <MenuItem fx:id="miRankClubes" mnemonicParsing="false" onAction="#rankingClubes" text="Clubes" />
+            <MenuItem fx:id="miRankSelecoes" mnemonicParsing="false" onAction="#rankingSelecoes" text="Seleções" />
+        </items>
+      </MenuButton>
+      <Button fx:id="bNoticias" alignment="CENTER" mnemonicParsing="false" onAction="#verNoticias" prefHeight="30.0" prefWidth="60.0" text="Notícias" />
+      <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" text="Opções">
+        <items>
+          <MenuItem fx:id="miSalvar" mnemonicParsing="false" onAction="#salvarJogo" text="Salvar Jogo" />
+          <MenuItem fx:id="miPreferencias" mnemonicParsing="false" onAction="#verPreferencias" text="Preferências" />
+            <MenuItem fx:id="bSobre" mnemonicParsing="false" onAction="#informacaoDoJogo" text="Sobre o jogo" />
+            <MenuItem fx:id="miSair" mnemonicParsing="false" onAction="#sairDoJogo" text="Sair do jogo" />
+        </items>
+      </MenuButton>
+      <Button fx:id="bAvancarTempo" alignment="CENTER" mnemonicParsing="false" onAction="#avancarTempo" prefHeight="30.0" prefWidth="86.0" text="Avançar" />
+   </children>
+</HBox>

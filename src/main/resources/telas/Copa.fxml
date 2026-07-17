@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="665.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CopaController">
+   <children>
+      <ListView fx:id="listaJogos" layoutX="16.0" layoutY="46.0" prefHeight="605.0" prefWidth="408.0" />
+      <Button fx:id="bJogosAnteriores" disable="true" layoutX="146.0" layoutY="8.0" mnemonicParsing="false" onAction="#jogosAnteriores" prefHeight="25.0" prefWidth="68.0" text="&lt;&lt;" />
+      <Button fx:id="bJogosProx" disable="true" layoutX="227.0" layoutY="8.0" mnemonicParsing="false" onAction="#jogosProx" prefHeight="25.0" prefWidth="68.0" text="&gt;&gt;" />
+   </children>
+</AnchorPane>

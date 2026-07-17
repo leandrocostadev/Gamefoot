@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="670.0" prefWidth="900.0" style="-fx-background-color: C0C0C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GerenciamentoDoTimeController">
+   <children>
+      <TableView fx:id="tabela_jogadores" layoutX="303.0" layoutY="34.0" prefHeight="586.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="coluna_id" prefWidth="55.0" text="id" visible="false" />
+          <TableColumn fx:id="coluna_apelido" prefWidth="211.0" text="Apelido" />
+            <TableColumn fx:id="coluna_habilidade" minWidth="0.0" prefWidth="52.0" text="Hab" />
+            <TableColumn fx:id="coluna_enegia" prefWidth="50.0" text="Enegia" />
+            <TableColumn fx:id="coluna_gols" prefWidth="51.0" text="Gols" />
+            <TableColumn fx:id="coluna_assists" prefWidth="52.0" text="Assists" />
+            <TableColumn fx:id="coluna_forma" prefWidth="84.0" text="Forma" />
+            <TableColumn fx:id="coluna_idade" prefWidth="42.0" text="idade" />
+            <TableColumn fx:id="coluna_satisfacao" minWidth="4.0" prefWidth="40.0" text="Sat" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="96.0" layoutY="71.0" prefHeight="25.0" prefWidth="168.0" text="Flamengo" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bEscalarTime" alignment="CENTER" layoutX="87.0" layoutY="581.0" mnemonicParsing="false" onAction="#escalacao" prefHeight="39.0" prefWidth="128.0" text="Escalar Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="14.0" layoutY="266.0" prefHeight="264.0" prefWidth="274.0" style="-fx-background-color: FFFFFF;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="105.0" text="Dinheiro em Caixa:" />
+            <Label layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="66.0" text="Jogadores:" />
+            <Label layoutX="14.0" layoutY="80.0" prefHeight="25.0" prefWidth="89.0" text="Jogador-Chave:" />
+            <Label layoutX="14.0" layoutY="117.0" prefHeight="25.0" prefWidth="46.0" text="Capitão:" />
+            <ComboBox fx:id="cbEscolherCapitao" layoutX="80.0" layoutY="117.0" prefHeight="25.0" prefWidth="186.0" />
+            <Label layoutX="14.0" layoutY="153.0" prefHeight="25.0" prefWidth="53.0" text="Artilheiro:" />
+            <Label layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="53.0" text="Garçom:" />
+            <Label layoutX="14.0" layoutY="222.0" prefHeight="25.0" prefWidth="83.0" text="Melhor Forma:" />
+            <Label fx:id="lbNumeroDeJogadores" layoutX="80.0" layoutY="47.0" prefHeight="25.0" prefWidth="53.0" text="0" />
+            <Label fx:id="lbDinheiroEmCaixa" layoutX="119.0" layoutY="14.0" prefHeight="25.0" prefWidth="139.0" text="000000" />
+            <Label fx:id="lbJogadorChave" layoutX="103.0" layoutY="80.0" prefHeight="25.0" prefWidth="160.0" text="Fulano de Tal" />
+            <Label fx:id="lbArtilheiro" layoutX="74.0" layoutY="153.0" prefHeight="25.0" prefWidth="192.0" text="Ciclano" />
+            <Label fx:id="lbGarcom" layoutX="74.0" layoutY="188.0" prefHeight="25.0" prefWidth="192.0" text="Metano" />
+            <Label fx:id="lbMelhorForma" layoutX="103.0" layoutY="222.0" prefHeight="25.0" prefWidth="160.0" text="Alfredo Di Costa" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="bMensagens" alignment="CENTER" layoutX="87.0" layoutY="184.0" mnemonicParsing="false" onAction="#verMensagens" prefHeight="39.0" prefWidth="128.0" text="Mensagens">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgTimeAtual" fitHeight="60.0" fitWidth="60.0" layoutX="26.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../escudos/flarj.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

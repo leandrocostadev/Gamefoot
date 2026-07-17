@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TableView fx:id="tabelaCampeonato" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+  <columns>
+    <TableColumn fx:id="colunaPosicao" prefWidth="35.0" text="PS" />
+    <TableColumn fx:id="colunaClube" prefWidth="254.0" text="CLUBE" />
+      <TableColumn fx:id="colunaPontos" minWidth="0.0" prefWidth="35.0" text="PG" />
+      <TableColumn fx:id="colunaJogos" prefWidth="35.0" text="J" />
+      <TableColumn fx:id="colunaVitorias" prefWidth="35.0" text="V" />
+      <TableColumn fx:id="colunaEmpates" prefWidth="35.0" text="E" />
+      <TableColumn fx:id="colunaDerrotas" prefWidth="35.0" text="D" />
+      <TableColumn fx:id="colunaGolsPro" prefWidth="35.0" text="GP" />
+      <TableColumn fx:id="colunaGolsContra" prefWidth="35.0" text="GC" />
+      <TableColumn fx:id="colunaDiferenca" prefWidth="35.0" text="SG" />
+  </columns>
+</TableView>

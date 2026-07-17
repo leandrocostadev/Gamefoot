@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GruposController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="440.0">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="1400.0" prefWidth="426.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo A" />
+                  <TableView fx:id="tabelaGrupoA" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posA" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeA" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosA" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosA" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasA" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesA" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasA" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproA" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconA" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoA" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo B" />
+                  <TableView fx:id="tabelaGrupoB" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posB" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeB" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosB" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosB" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasB" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesB" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasB" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproB" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconB" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoB" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo C" />
+                  <TableView fx:id="tabelaGrupoC" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posC" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeC" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosC" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosC" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasC" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesC" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasC" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproC" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconC" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoC" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo D" />
+                  <TableView fx:id="tabelaGrupoD" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posD" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeD" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosD" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosD" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasD" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesD" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasD" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproD" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconD" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoD" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo E" />
+                  <TableView fx:id="tabelaGrupoE" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posE" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeE" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosE" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosE" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasE" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesE" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasE" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproE" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconE" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoE" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo F" />
+                  <TableView fx:id="tabelaGrupoF" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posF" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeF" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosF" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosF" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasF" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesF" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasF" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproF" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconF" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoF" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo G" />
+                  <TableView fx:id="tabelaGrupoG" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posG" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeG" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosG" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosG" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasG" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesG" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasG" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproG" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconG" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoG" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+                  <Label prefHeight="20.0" prefWidth="426.0" text="Grupo H" />
+                  <TableView fx:id="tabelaGrupoH" prefHeight="155.0" prefWidth="426.0">
+                     <columns>
+                        <TableColumn fx:id="coluna_posH" prefWidth="23.0" />
+                        <TableColumn fx:id="coluna_timeH" prefWidth="187.0" />
+                        <TableColumn fx:id="coluna_pontosH" prefWidth="27.0" text="PG" />
+                        <TableColumn fx:id="coluna_jogosH" prefWidth="27.0" text="J" />
+                        <TableColumn fx:id="coluna_vitoriasH" prefWidth="27.0" text="V" />
+                        <TableColumn fx:id="coluna_empatesH" prefWidth="27.0" text="E" />
+                        <TableColumn fx:id="coluna_derrotasH" prefWidth="27.0" text="D" />
+                        <TableColumn fx:id="coluna_golproH" prefWidth="27.0" text="GP" />
+                        <TableColumn fx:id="coluna_golconH" prefWidth="27.0" text="GC" />
+                        <TableColumn fx:id="coluna_saldoH" prefWidth="27.0" text="SG" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button fx:id="bFaseAnt" disable="true" layoutX="132.0" layoutY="8.0" mnemonicParsing="false" onAction="#faseAnterior" prefHeight="25.0" prefWidth="77.0" text="&lt;&lt;" />
+      <Button fx:id="bFaseProx" disable="true" layoutX="232.0" layoutY="8.0" mnemonicParsing="false" onAction="#ProximaFase" prefHeight="25.0" prefWidth="77.0" text="&gt;&gt;" />
+   </children>
+</AnchorPane>

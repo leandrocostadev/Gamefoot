@@ -1,0 +1,4 @@
+ #DB Properties
+ db.url=jdbc:mysql://localhost:3306/gamefoot?useSSL=false&serverTimezone=UTC
+ db.username=root
+ db.password=Stella1926@

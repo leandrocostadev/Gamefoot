@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompeticaoController">
+   <children>
+      <Button fx:id="bHistorico" layoutX="52.0" layoutY="194.0" mnemonicParsing="false" onAction="#historico" prefHeight="25.0" prefWidth="158.0" text="Histórico" />
+      <Button fx:id="bResultados" layoutX="248.0" layoutY="194.0" mnemonicParsing="false" onAction="#verResultados" prefHeight="25.0" prefWidth="164.0" text="Ver Resultados" />
+      <Button fx:id="bJogadoresRegulares" layoutX="151.0" layoutY="349.0" mnemonicParsing="false" onAction="#jogadoresMaisRegulares" prefHeight="25.0" prefWidth="164.0" text="Jogadores Mais Regulares" />
+      <Button fx:id="bAssistentes" layoutX="248.0" layoutY="452.0" mnemonicParsing="false" onAction="#verAssistentes" prefHeight="25.0" prefWidth="164.0" text="Lista de Assistentes" />
+      <Button fx:id="bArtilheiros" layoutX="49.0" layoutY="452.0" mnemonicParsing="false" onAction="#verArtilheiros" prefHeight="24.0" prefWidth="164.0" text="Lista de Artilheiros" />
+      <Label fx:id="lbJogadorRegular" layoutX="151.0" layoutY="325.0" prefHeight="24.0" prefWidth="164.0" text="Matheus Pereira 8,25" />
+      <Label layoutX="151.0" layoutY="301.0" prefHeight="24.0" prefWidth="164.0" text="Jogador Mais Regular" />
+      <Label fx:id="lbAssistente" layoutX="248.0" layoutY="428.0" prefHeight="24.0" prefWidth="164.0" text="Fernando Klusener 14 assists" />
+      <Label layoutX="248.0" layoutY="404.0" prefHeight="24.0" prefWidth="164.0" text="Assistentes" />
+      <Label fx:id="lbArtilheiro" layoutX="49.0" layoutY="428.0" prefHeight="24.0" prefWidth="164.0" text="Mário Ceballos 18 gols" />
+      <Label layoutX="49.0" layoutY="404.0" prefHeight="24.0" prefWidth="164.0" text="Artilheiro" />
+   </children>
+</AnchorPane>

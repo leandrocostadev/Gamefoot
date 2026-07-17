@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="670.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tabelaHistorico" layoutX="14.0" layoutY="298.0" prefHeight="323.0" prefWidth="361.0">
+         <columns>
+            <TableColumn prefWidth="27.0" text="id" visible="false" />
+            <TableColumn fx:id="col_historico_ano" prefWidth="40.0" text="Ano" />
+            <TableColumn fx:id="col_historico_clube" prefWidth="199.0" text="Clube" />
+            <TableColumn fx:id="col_historico_jogos" prefWidth="30.0" text="J" />
+            <TableColumn fx:id="col_historico_gols" prefWidth="30.0" text="G" />
+            <TableColumn fx:id="col_historico_assists" prefWidth="30.0" text="A" />
+            <TableColumn fx:id="col_historico_nota" prefWidth="30.0" text="N" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tabelaTitulos" layoutX="190.0" layoutY="65.0" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="col_titulos_competicaoId" prefWidth="75.0" text="id" visible="false" />
+          <TableColumn fx:id="col_titulos_ano" prefWidth="58.0" text="Ano" />
+            <TableColumn fx:id="col_titulos_equipe" prefWidth="192.0" text="Equipe" />
+            <TableColumn fx:id="col_titulos_competicao" prefWidth="268.0" text="Competição" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabelaPremios" layoutX="507.0" layoutY="304.0" prefHeight="317.0" prefWidth="379.0">
+        <columns>
+          <TableColumn fx:id="col_premios_id" prefWidth="75.0" text="id" visible="false" />
+          <TableColumn fx:id="col_premios_ano" prefWidth="60.0" text="Ano" />
+            <TableColumn fx:id="col_premios_nome" prefWidth="247.0" text="Prêmio" />
+            <TableColumn fx:id="col_premios_grau" prefWidth="71.0" text="Grau" />
+        </columns>
+      </TableView>
+      <Label fx:id="jogador_nome" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="164.0" text="Cristiano Ronaldo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

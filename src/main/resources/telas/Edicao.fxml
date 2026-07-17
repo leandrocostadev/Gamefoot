@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TableView fx:id="tabelaClubes" layoutX="14.0" layoutY="88.0" prefHeight="559.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="col_clubes_id" prefWidth="28.0" text="id" visible="false" />
+          <TableColumn fx:id="col_clubes_nome" prefWidth="237.0" text="Clubes" />
+            <TableColumn fx:id="col_clubes_nac" prefWidth="140.0" text="País" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbClubeNac" layoutX="53.0" layoutY="53.0" prefHeight="25.0" prefWidth="137.0" promptText="Qualquer" />
+      <Label layoutX="14.0" layoutY="53.0" prefHeight="25.0" prefWidth="31.0" text="País:" />
+      <TextField fx:id="tfClube" layoutX="14.0" layoutY="16.0" onAction="#buscarClube" prefHeight="25.0" prefWidth="225.0" />
+      <Button fx:id="bBuscarClube" layoutX="247.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Pesquisar" />
+      <TableView fx:id="tabelaJogadores" layoutX="416.0" layoutY="88.0" prefHeight="559.0" prefWidth="470.0">
+        <columns>
+          <TableColumn fx:id="col_jogadores_id" prefWidth="75.0" text="id" visible="false" />
+          <TableColumn fx:id="col_jogadores_nome" prefWidth="230.0" text="Jogadores" />
+            <TableColumn fx:id="col_jogadores_pos" prefWidth="55.0" text="Pos" />
+            <TableColumn fx:id="col_jogadores_nivel" prefWidth="85.0" text="Nível" />
+            <TableColumn fx:id="col_jogadores_nac" prefWidth="99.0" text="País" />
+        </columns>
+      </TableView>
+      <Button fx:id="bBuscarJogador" layoutX="651.0" layoutY="14.0" mnemonicParsing="false" onAction="#buscarJogador" prefHeight="25.0" prefWidth="87.0" text="Pesquisar" />
+      <TextField fx:id="tfJogador" layoutX="416.0" layoutY="14.0" prefHeight="25.0" prefWidth="225.0" />
+      <Label layoutX="416.0" layoutY="55.0" prefHeight="25.0" prefWidth="31.0" text="País:" />
+      <ComboBox fx:id="cmbJogadorNac" layoutX="447.0" layoutY="55.0" prefHeight="25.0" prefWidth="137.0" promptText="Qualquer" />
+      <Button fx:id="bAddClube" layoutX="85.0" layoutY="661.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Adicionar Clube" />
+      <Button fx:id="bExcClube" layoutX="213.0" layoutY="661.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Excluir Clube" />
+      <Button fx:id="bExcJogador" layoutX="661.0" layoutY="661.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Excluir Jogador" />
+      <Button fx:id="bAddJogador" layoutX="526.0" layoutY="661.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Adicionar Jogador" />
+   </children>
+</AnchorPane>

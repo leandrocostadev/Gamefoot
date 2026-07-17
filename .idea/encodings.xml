@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/application/CampeonatoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/application/CompeticaoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/application/CopaController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/application/GerenciamentoDoTimeController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/application/MenuFixoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/modelo/AtributosJogador.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/modelo/Competicao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/modelo/Jogador.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/modelo/Jogo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
